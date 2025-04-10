@@ -296,9 +296,7 @@ if [[ ${NO_FRAMEWORK} -ne 1 ]]; then
     else
       echo -e -n "\nCreating frameworks under prebuilt: "
 
-      create_universal_libraries_for_ios_default_frameworks
-
-      create_ios_default_frameworks
+      create_ios_frameworks_for_all_architectures
     fi
 
     echo -e "ok\n"
