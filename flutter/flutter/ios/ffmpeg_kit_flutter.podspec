@@ -20,18 +20,12 @@ Pod::Spec.new do |s|
   s.dependency          'Flutter'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
-  
-  s.ios.vendored_frameworks = 'ios/libs/*.xcframework'
-  s.ios.pod_target_xcconfig = { 
-  'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**', 
-  'FRAMEWORK_SEARCH_PATHS' => '$(SRCROOT)/ios/libs' 
-  }
-  
   s.subspec 'min' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -40,7 +34,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -49,7 +44,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min-gpl', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -58,7 +54,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min-gpl', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
     ss.ios.deployment_target = '14.0'
   end
 
@@ -66,7 +63,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
     ss.ios.deployment_target = '14.0'
   end
 
@@ -74,7 +72,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -83,7 +82,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https-gpl', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -92,7 +92,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https-gpl', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -101,7 +102,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-audio', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -110,7 +112,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-audio', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -119,7 +122,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-video', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -128,7 +132,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-video', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -137,7 +142,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
     ss.ios.deployment_target = '14.0'
   end
 
@@ -145,7 +151,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -154,7 +161,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full-gpl', "6.0"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
@@ -163,7 +171,8 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full-gpl', "6.0.LTS"
-    # ss.vendored_frameworks  = 'ios/libs/*.xcframework'
+    ss.vendored_frameworks = 'ios/libs/*.xcframework'
+    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
 
     ss.ios.deployment_target = '14.0'
   end
