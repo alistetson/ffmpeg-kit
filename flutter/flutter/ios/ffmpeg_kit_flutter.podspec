@@ -24,157 +24,156 @@ Pod::Spec.new do |s|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'min-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
 
-    ss.ios.deployment_target = '14.0'
+
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'min-gpl' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min-gpl', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
 
-    ss.ios.deployment_target = '14.0'
+
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'min-gpl-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-min-gpl', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
-    ss.ios.deployment_target = '14.0'
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'https' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
-    ss.ios.deployment_target = '14.0'
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'https-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'https-gpl' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https-gpl', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'https-gpl-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-https-gpl', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'audio' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-audio', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'audio-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-audio', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'video' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-video', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'video-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-video', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'full' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
-    ss.ios.deployment_target = '14.0'
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'full-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'full-gpl' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full-gpl', "6.0"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
   s.subspec 'full-gpl-lts' do |ss|
     ss.source_files         = 'Classes/**/*'
     ss.public_header_files  = 'Classes/**/*.h'
     # ss.dependency 'ffmpeg-kit-ios-full-gpl', "6.0.LTS"
-    ss.vendored_frameworks = 'ios/libs/*.xcframework'
-    ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/ios/libs/**' }
+    ss.vendored_frameworks = 'ios/libs/ffmpegkit.xcframework'
+    s.source       = { :git => 'https://github.com/alistetson/ffmpeg-kit.git', :tag => s.version, :submodules => true }
 
-    ss.ios.deployment_target = '14.0'
+    ss.ios.deployment_target = '12.0'
   end
 
 end
